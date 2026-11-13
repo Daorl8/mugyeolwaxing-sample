@@ -114,11 +114,13 @@ a{ color:inherit; }
 .hero .ko em{ font-style:normal; color:var(--bronze); }
 .hero .sub{ color:var(--soft); max-width:30em; margin:0 auto; }
 .rule-label{ display:block; width:min(100%, 420px); margin:30px auto 0; padding:11px 0; border-top:1px solid var(--frame); border-bottom:1px solid var(--frame); font-family:var(--kserif); color:var(--bronze); letter-spacing:.42em; padding-left:.42em; font-size:.95rem; }
+@media (max-width:480px){ .rule-label{ letter-spacing:.2em; padding-left:.2em; font-size:.9rem; } }
 .hero .cta{ display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:30px; }
+.hero .resv{ display:block; font-size:.9rem; margin-top:18px; }
 .hero .hours{ display:block; font-size:.86rem; color:var(--soft); margin-top:18px; }
-.hero-photo{ margin-top:16px; aspect-ratio:16/9; overflow:hidden; }
-.hero-photo img{ width:100%; height:100%; object-fit:cover; object-position:50% 62%; }
-@media (min-width:900px){ .card-frame{ padding:84px 48px 72px; } .hero-photo{ aspect-ratio:21/9; } }
+.hero-photo{ margin:16px auto 0; max-width:860px; aspect-ratio:3/2; overflow:hidden; }
+.hero-photo img{ width:100%; height:100%; object-fit:cover; object-position:50% 35%; }
+@media (min-width:900px){ .card-frame{ padding:84px 48px 72px; } }
 
 /* 01 소개 */
 .phil-grid{ max-width:640px; margin:48px auto 0; text-align:center; }
@@ -251,13 +253,14 @@ html:not(.js) .pane-label{ display:block; font-weight:500; margin:30px 0 -10px; 
         <h1 class="reveal">Comfort, <em>even</em><br />the first time.</h1>
         <span class="ko reveal"><em>처음이어도</em> 편안해야 합니다</span>
         <span class="vline reveal" aria-hidden="true"></span>
-        <p class="sub reveal">용인 동백에서 편안한 왁싱을 제안드리는 공간, 무결왁싱입니다.</p>
-        <span class="rule-label reveal">100% 우선 예약제 · 1:1 프라이빗</span>
+        <p class="sub reveal">용인 동백에서 편안한 왁싱을 제안드리는 공간 무결왁싱입니다.</p>
+        <span class="rule-label reveal">100% 우선 예약제 · <span class="nw">1:1 프라이빗</span></span>
         <div class="cta reveal">
           <a class="btn fill" href="https://m.place.naver.com/place/2022733941/home" target="_blank" rel="noopener">네이버 플레이스</a>
           <a class="btn" href="#price">가격 보기</a>
-          <a class="btn" href="tel:050713602129">전화 문의</a>
+          <a class="btn" href="tel:050713602129">전화 예약</a>
         </div>
+        <span class="resv reveal">예약 · 문의는 네이버 플레이스 또는 전화로 해 주세요</span>
         <span class="hours reveal"><span class="nw">매일 10:00 - 23:00</span> · <span class="nw">동백역 3번 출구 도보 약 3분</span></span>
       </div>
       <figure class="hero-photo reveal"><img src="mg-room.webp" alt="밝은 바닥의 프라이빗 시술실과 흰 시트를 씌운 베드" width="900" height="1019" fetchpriority="high" /></figure>
@@ -274,7 +277,7 @@ html:not(.js) .pane-label{ display:block; font-weight:500; margin:30px 0 -10px; 
       <div class="phil-grid">
         <div class="phil-text reveal">
           <p class="quote">왁싱은 단순한 시술이 아니라 피부에 직접 닿는 관리의 시간이라고 생각합니다.</p>
-          <p>같은 시술이라도 누구에게 어떤 환경에서 받느냐에 따라 그 만족도는 달라집니다. 무결왁싱은 그 차이를 편안함에서부터 만들어갑니다.</p>
+          <p>같은 시술이라도 누구에게 어떤 환경에서 받느냐에 따라 그 만족도는 달라집니다. 무결왁싱은 그 차이를 편안함에서부터 만들어갑니다</p>
           <p>상담부터 시술까지 고객님의 피부 타입과 모질을 세심하게 확인한 후 가장 적합한 방식으로 진행합니다.</p>
           <p><strong>처음 브라질리언 왁싱을 경험하시는 분들도</strong> 부담 없이 시작하실 수 있도록 충분한 상담과 안내를 도와드립니다.</p>
         </div>
@@ -287,15 +290,15 @@ html:not(.js) .pane-label{ display:block; font-weight:500; margin:30px 0 -10px; 
       <div class="head reveal">
         <span class="label">02 · PRICE</span><span class="vline" aria-hidden="true"></span>
         <h2 id="price-h">Brazilian, Face &amp; Body</h2>
-        <span class="ko">브라질리언 왁싱 바디 왁싱 페이스 왁싱 모두 가능합니다</span>
+        <span class="ko">브라질리언 왁싱 바디 왁싱 페이스 왁싱 모두 가능하며,<br />자연스럽고 깔끔한 결과를 만들어드립니다</span>
       </div>
 
       <div class="event reveal">
         <span class="tag">신규 이벤트 · 단 한 번뿐인 기회</span>
         <h3>First Visit Brazilian</h3>
         <div class="event-rows">
-          <div class="event-row"><span class="name">여자 브라질리언 왁싱</span><span class="price">55,000원</span><span class="re">4~6주 이내 재방문 시 60,000원</span></div>
-          <div class="event-row"><span class="name">남자 브라질리언 왁싱</span><span class="price">75,000원</span><span class="re">4~6주 이내 재방문 시 80,000원</span></div>
+          <div class="event-row"><span class="name">첫방문 여자 브라질리언 왁싱</span><span class="price">55,000원</span><span class="re">4~6주 이내 재방문 시 60,000원</span></div>
+          <div class="event-row"><span class="name">첫방문 남자 브라질리언 왁싱</span><span class="price">75,000원</span><span class="re">4~6주 이내 재방문 시 80,000원</span></div>
         </div>
       </div>
 
@@ -410,10 +413,10 @@ html:not(.js) .pane-label{ display:block; font-weight:500; margin:30px 0 -10px; 
       <div class="visit-grid">
         <div class="reveal">
           <dl class="info">
-            <div><dt>주소</dt><dd>경기 용인시 기흥구 동백죽전대로 331 <span class="nw">B2층 220호</span><small>지번 중동 724-11 · 에버라인 동백역 3번 출구에서 185m</small></dd></div>
+            <div><dt>주소</dt><dd>경기 용인시 기흥구 동백죽전대로 331 <span class="nw">B2층 220호</span><small>지번 중동 724-11 · 에버라인동백역 3번 출구에서 185m</small></dd></div>
             <div><dt>지하철</dt><dd>동백역 3번 출구에서 도보 약 3분 거리로, 횡단보도 건너면 바로 보이는 건물입니다.</dd></div>
             <div><dt>버스</dt><dd>동백역(동백월드메르디앙, 동백경남아너스빌 방면) 정류장 하차 후 바로 앞 건물에 위치해 있습니다.</dd></div>
-            <div><dt>차량</dt><dd>'경기 용인시 기흥구 중동 724-11' 검색 후 스퀘어일레븐 주차장 입구로 오시면 됩니다.<small>1층 지상주차장 또는 B3층 지하주차장 이용 후 엘리베이터를 타고 B2층으로 오시면 됩니다. (무료주차)</small></dd></div>
+            <div><dt>차량</dt><dd>'경기 용인시 기흥구 중동 724-11' 검색 후 스퀘어일레븐 주차장 입구로 오시면 됩니다.<small>1층 지상주차장 또는 B3층 지하주차장 이용 후 엘리베이터를 타고 B2층으로 오시면 됩니다. <span class="nw">(무료주차)</span></small></dd></div>
             <div><dt>영업</dt><dd><span class="nw">매일 10:00 - 23:00</span><small>100% 우선 예약제</small></dd></div>
             <div><dt>전화</dt><dd><a class="nw" href="tel:050713602129">0507-1360-2129</a></dd></div>
           </dl>
