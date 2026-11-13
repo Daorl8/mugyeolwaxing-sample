@@ -1,4 +1,4 @@
-# STRUCTURE · mugyeolwaxing-sample (v0.2 · 사장님 공지 카드 톤)
+# STRUCTURE · mugyeolwaxing-sample (v0.2.2 · 사장님 공지 카드 톤)
 
 ```
 mugyeolwaxing-sample/
